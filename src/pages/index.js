@@ -11,15 +11,23 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <section className="section">
+          <div className="container"> 
+            <div className="content">
+              <h2>Ma bio</h2>
+              <p className="">
+                Je m'apelle Muriel, j'ai 48 ans et je suis en reconvertion pour pouvoir vivre de ma passion
+              </p>
+              <br />
+            </div>
+          </div>
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Liste des articles</h1>
+              <h2>Liste des articles</h2>
             </div>
             {posts
               .map(({ node: post }) => (
                 <div
                   className="content"
-                  style={{ border: '1px solid #333', padding: '2em 4em' }}
                   key={post.id}
                 >
                   <p>
